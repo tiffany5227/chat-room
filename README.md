@@ -1,5 +1,6 @@
 # chat-room
 ChatRoom is a simple chat website where users can connect and communicate with eachother in the same room. 
+Features include real-time messaging, active users, autoscroll, and typing notifications.
 
 # Demo
 ![chat-demo.gif](https://github.com/tiffany5227/chat-room/blob/main/GIFs/chat-demo.gif)
