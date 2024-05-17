@@ -1,5 +1,5 @@
 # chat-room
-ChatRoom is a simple chat website where users can connect and communicate with eachother in the same room. 
+ChatRoom is a simple chat website built with React and Socket.io where users can connect and communicate with eachother in the same room. 
 Features include real-time messaging, active users, autoscroll, and typing notifications.
 
 # Demo
