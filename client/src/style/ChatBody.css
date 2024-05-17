@@ -1,0 +1,41 @@
+#chat-box{
+    padding: 2%;
+    overflow-y: scroll;
+    flex: 0.75;
+    position: relative;
+}
+
+.messages{
+    padding: 1% 0;
+}
+
+.sender{
+    text-align: right;
+    margin: 0;
+    color: dimgrey;
+}
+
+.sent-msgs{
+    text-align: right;
+}
+
+.sent-msgs div{
+    display: inline-block; 
+    background-color: lightsteelblue;
+    padding: 1%;
+    max-width: 40%;
+    border-radius: 10px;
+}
+.receiver{
+    margin: 0;
+    color: dimgrey;
+}
+
+.received-msgs div{
+    display: inline-block; 
+    background-color: gainsboro;
+    padding: 1%;
+    max-width: 40%;
+    border-radius: 10px;
+}
+

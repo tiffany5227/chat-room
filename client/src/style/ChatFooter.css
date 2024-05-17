@@ -1,0 +1,37 @@
+.input-msg-box{
+    flex: 0.15;
+}
+
+#type-box{
+    width: 95%;
+    padding: 2%;
+
+}
+
+#text-box{
+    width: 85%;
+    font-size: 18px;
+    padding: 1%;
+}
+
+#send-btn{
+    width: 10%;
+    background-color: lightsteelblue;
+    font-size: 18px;
+    padding: 1%;
+}
+
+#send-btn:hover{
+    background-color: steelblue;
+    cursor: pointer;
+}
+#user-type-box{
+    border-bottom: 1px dotted grey;
+    padding: 0 0 1% 2%;
+}
+
+#user-typing{
+    color: grey;
+    font-style: italic;
+
+}
