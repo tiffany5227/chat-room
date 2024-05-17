@@ -16,7 +16,7 @@ const Home = ({socket}) => {
     const specialCharRegex = /[!@#$%^&*(),.?":{}|<> ]/;
     
     if (inputValue.length < 4 || inputValue.length > 14) {
-        setError('Username must be between 5-14 characters.');
+        setError('Username must be between 4-14 characters.');
     } else if (specialCharRegex.test(inputValue)) {
         setError('Username must not contain special characters.');
     } else {
