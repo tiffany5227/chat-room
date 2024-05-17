@@ -15,7 +15,7 @@ const Home = ({socket}) => {
     // regex to check special characters
     const specialCharRegex = /[!@#$%^&*(),.?":{}|<> ]/;
     
-    if (inputValue.length < 5 || inputValue.length > 14) {
+    if (inputValue.length < 4 || inputValue.length > 14) {
         setError('Username must be between 5-14 characters.');
     } else if (specialCharRegex.test(inputValue)) {
         setError('Username must not contain special characters.');
@@ -40,14 +40,14 @@ const Home = ({socket}) => {
             <div id="username-rules-box">
                 <div>Create a username to enter the chatroom, it</div>
                 <ul>
-                    <li>Must be between 5-14 characters</li>
+                    <li>Must be between 4-14 characters</li>
                     <li>Must not contain any special characters</li>
                 </ul>
             </div>
             <br/>
             <form onSubmit={handleSubmit}>
                 <label>Enter your username:</label><br/>
-                <input type="text" id="username" value={username} onChange={handleChange}></input>
+                <input autocomplete="off" type="text" id="username" value={username} onChange={handleChange}></input>
                 <div className="error">{error}</div>
                 <br/>
                 <button type="submit" disabled={!entered || error !== ''}>Go to ChatRoom</button>
