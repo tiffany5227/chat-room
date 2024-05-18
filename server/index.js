@@ -45,7 +45,7 @@ socketIO.on('connection', (socket) => {
   });
 
   socket.on('disconnect', () => {
-    console.log(`${socket.id} user just connected!`);
+    console.log(`${socket.id} user disconnected!`);
     //remove disconnected user from users array
     users = users.filter((user) => user.socketID !== socket.id);
     socketIO.emit('userResponse', users);
